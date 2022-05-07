@@ -8,7 +8,7 @@ namespace PasteBook.WebApi.Models
     {
         [Key]
         public int PostId { get; set; }
-        public Guid UserId { get; set; }
+        public int UserId { get; set; }
         public string PostContent { get; set; }
         public DateTime PostDate { get; set; }
         public User User { get; set; }

@@ -8,7 +8,7 @@ namespace PasteBook.WebApi.Models
     {
         [Key]
         public int AlbumId { get; set; }
-        public Guid UserId { get; set; }
+        public int UserId { get; set; }
         public string AlbumName { get; set; }
 
         public ICollection<Photo> Photos { get; set; }

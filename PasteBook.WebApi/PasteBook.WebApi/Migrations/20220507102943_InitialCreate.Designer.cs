@@ -10,7 +10,7 @@ using PasteBook.WebApi.Data;
 namespace PasteBook.WebApi.Migrations
 {
     [DbContext(typeof(PasteBookDb))]
-    [Migration("20220506090406_InitialCreate")]
+    [Migration("20220507102943_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -31,8 +31,8 @@ namespace PasteBook.WebApi.Migrations
                     b.Property<string>("AlbumName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
 
                     b.HasKey("AlbumId");
 
@@ -57,8 +57,8 @@ namespace PasteBook.WebApi.Migrations
                     b.Property<int>("PostId")
                         .HasColumnType("int");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
 
                     b.HasKey("CommentId");
 
@@ -77,8 +77,8 @@ namespace PasteBook.WebApi.Migrations
                     b.Property<int>("PostId")
                         .HasColumnType("int");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
 
                     b.HasKey("LikeId");
 
@@ -120,8 +120,8 @@ namespace PasteBook.WebApi.Migrations
                     b.Property<DateTime>("PostDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
 
                     b.HasKey("PostId");
 
@@ -132,9 +132,10 @@ namespace PasteBook.WebApi.Migrations
 
             modelBuilder.Entity("PasteBook.WebApi.Models.User", b =>
                 {
-                    b.Property<Guid>("UserId")
+                    b.Property<int>("UserId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("BirthDate")
                         .HasColumnType("nvarchar(max)");
@@ -157,6 +158,15 @@ namespace PasteBook.WebApi.Migrations
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("PasswordKey")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhotoName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ProfileBlurb")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
@@ -169,11 +179,11 @@ namespace PasteBook.WebApi.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<Guid>("FriendId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int>("FriendId")
+                        .HasColumnType("int");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
 
                     b.HasKey("UserFriendId");
 
