@@ -50,6 +50,11 @@ namespace PasteBook.WebApi
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PasteBook.WebApi v1"));
             }
 
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
