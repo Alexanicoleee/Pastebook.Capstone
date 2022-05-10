@@ -10,7 +10,7 @@ using PasteBook.WebApi.Data;
 namespace PasteBook.WebApi.Migrations
 {
     [DbContext(typeof(PasteBookDb))]
-    [Migration("20220510012553_InitialCreate")]
+    [Migration("20220510013325_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -30,9 +30,6 @@ namespace PasteBook.WebApi.Migrations
 
                     b.Property<string>("AlbumName")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PhotoId")
-                        .HasColumnType("int");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");

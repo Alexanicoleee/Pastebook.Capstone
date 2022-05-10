@@ -29,9 +29,6 @@ namespace PasteBook.WebApi.Migrations
                     b.Property<string>("AlbumName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PhotoId")
-                        .HasColumnType("int");
-
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 

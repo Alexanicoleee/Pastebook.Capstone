@@ -35,7 +35,6 @@ namespace PasteBook.WebApi.Migrations
                     AlbumId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserId = table.Column<int>(type: "int", nullable: false),
-                    PhotoId = table.Column<int>(type: "int", nullable: false),
                     AlbumName = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
