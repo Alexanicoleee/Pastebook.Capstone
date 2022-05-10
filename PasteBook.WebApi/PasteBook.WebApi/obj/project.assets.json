@@ -5979,23 +5979,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\edwin.santos\\.nuget\\packages\\": {},
+    "C:\\Users\\cristobal.fragata\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\edwin.santos\\Desktop\\Capstone\\PasteBook.WebApi\\PasteBook.WebApi\\PasteBook.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\cristobal.fragata\\Documents\\CapstoneClone3\\Pastebook.Capstone\\PasteBook.WebApi\\PasteBook.WebApi\\PasteBook.WebApi.csproj",
       "projectName": "PasteBook.WebApi",
-      "projectPath": "C:\\Users\\edwin.santos\\Desktop\\Capstone\\PasteBook.WebApi\\PasteBook.WebApi\\PasteBook.WebApi.csproj",
-      "packagesPath": "C:\\Users\\edwin.santos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\edwin.santos\\Desktop\\Capstone\\PasteBook.WebApi\\PasteBook.WebApi\\obj\\",
+      "projectPath": "C:\\Users\\cristobal.fragata\\Documents\\CapstoneClone3\\Pastebook.Capstone\\PasteBook.WebApi\\PasteBook.WebApi\\PasteBook.WebApi.csproj",
+      "packagesPath": "C:\\Users\\cristobal.fragata\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cristobal.fragata\\Documents\\CapstoneClone3\\Pastebook.Capstone\\PasteBook.WebApi\\PasteBook.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\edwin.santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cristobal.fragata\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
