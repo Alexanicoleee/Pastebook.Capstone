@@ -10,6 +10,7 @@ namespace PasteBook.WebApi.Data
 
         public IUserRepository UserRepository { get; }
         public ICommentRepository CommentRepository { get; }
+        public IAlbumRepository AlbumRepository { get; }
     }
 
     public class UnitOfWork : IUnitOfWork, IDisposable
@@ -19,12 +20,14 @@ namespace PasteBook.WebApi.Data
 
         public IUserRepository UserRepository { get; private set; }
         public ICommentRepository CommentRepository { get; private set; }
+        public IAlbumRepository AlbumRepository { get; private set; }
 
         public UnitOfWork(PasteBookDb context)
         {
             this.context = context;
             this.UserRepository = new UserRepository(context);
             this.CommentRepository = new CommentRepository(context);
+            this.AlbumRepository = new AlbumRepository(context);
         }
 
         public async Task CommitAsync()
