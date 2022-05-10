@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PasteBook.WebApi",
+    "\\PasteBook.WebApi\\PasteBook.WebApi"
   ],
-  "SelectedNode": "\\C:\\Users\\alexandra.cajes\\Source\\Repos\\Pastebook.Capstone",
+  "SelectedNode": "\\PasteBook.WebApi",
   "PreviewInSolutionExplorer": false
 }
