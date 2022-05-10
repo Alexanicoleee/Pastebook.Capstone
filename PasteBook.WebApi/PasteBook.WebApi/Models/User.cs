@@ -16,7 +16,6 @@ namespace PasteBook.WebApi.Models
         public string BirthDate { get; set; }
         public string Gender { get; set; }
         public string MobileNumber { get; set; }
-        public string PhotoName { get; set; }
         public string ProfileBlurb { get; set; }
         public ICollection<Post> Posts { get; set; }
         public ICollection<UserFriend> UserFriends { get; set; }
