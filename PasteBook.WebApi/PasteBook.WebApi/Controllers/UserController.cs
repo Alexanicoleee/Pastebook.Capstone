@@ -22,6 +22,7 @@ namespace PasteBook.WebApi.Controllers
             var users = await UnitOfWork.UserRepository.FindAll();
             return Ok(users);
         }
+
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProduct(int id)
         {
@@ -32,7 +33,7 @@ namespace PasteBook.WebApi.Controllers
             }
             return NotFound();
         }
-
+        
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] User user)
         {

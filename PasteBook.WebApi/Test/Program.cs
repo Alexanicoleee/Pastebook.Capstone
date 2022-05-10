@@ -1,8 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using PasteBook.WebApi.Data;
+using PasteBook.WebApi.Models;
+using PasteBook.WebApi.Repositories;
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Test
 {
@@ -20,12 +24,10 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            DB dB = new DB();
-            var users = dB.Users.ToList();
-            foreach (var user in users)
-            {
-                Console.WriteLine(JsonConvert.SerializeObject(user));
-            }
+            DB context = new DB();
+            var users = context.Users.ToList();
+
+            Console.WriteLine(JsonConvert.SerializeObject(users));
         }
     }
 }
